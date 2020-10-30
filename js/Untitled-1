@@ -1,0 +1,88 @@
+Bash/Zsh (Terminal)
+For EACH and EVERY question in this section, assume you are in the ~/fridge directory, and send the correct commands:
+Make two directories inside ~/fridge: vegetables and cakes:
+
+mkdir vegetables cakes
+
+Create files in vegetables named apple.txt and lettuce.txt:
+
+cd vegetables/
+touch apple.txt lettuce.txt
+
+Rename apple.txt to cabbage.txt:
+
+mv apple.txt cabbage.txt
+
+Delete the cakes directory and everything inside it:
+
+cd ..
+rm -r cakes
+
+JS Variables
+Assign the string "JD" to a variable named doctor:
+
+const doctor = "JD"
+
+Using the doctor variable instead of the text "JD", use template literals to form the string "my favorite fictional doctor is named JD", assigning it to a variable named phrase:
+
+`my favorite fictional doctor is named ${doctor}`
+
+
+JS Conditionals
+var milesPerGallon = 29;
+var gallonsLeft = 3;
+Assuming your car runs with the above variables, write an if statement that console.logs "SOS!" if your car cannot reach the closest gas station that is 100 miles away (no need to write a function, just the if statement please):
+
+if (milesPerGallon * gallonsLeft < 100) {
+  console.log("SOS!");
+}
+
+Data Structures - JS Arrays
+Create an array named weekend with just the strings 'Saturday' and 'Monday' in it:
+
+const weekend = ['Saturday', 'Monday'];
+
+Add the string 'Sunday' to the end of the weekend array:
+
+weekend.push('Sunday');
+
+Now add the string 'Friday' to the front of the weekend array:
+
+weekend.unshift('Friday');
+
+Because 'Monday' is a weekday, remove it from the weekend array:
+
+weekend.pop('Monday');
+
+Using square bracket notation, access 'Saturday' in the weekend array and assign to a variable named day (Note: the array has three days in it as this point):
+
+let day = weekend[1];
+
+Remove 'Friday' from the array:
+
+weekend.pop(weekend[0]);
+
+Data Structures - JS Objects
+Don't forget to use a var or let when defining new variables...
+Write an object literal named brain having a property with a key of energyLevel and a numeric value of 10:
+
+let brain {
+  energyLevel: 10,
+};
+
+Assign the property of energyLevel to a variable named energy:
+
+let energy = brain.energyLevel
+
+Add a dream property to the brain object that holds the string 'electric sheep':
+
+brain.dream = 'electric sheep';
+
+JS Functions
+Write a function declaration named computeArea that has two parameters, length & width, and returns the area of a rectangle (the product of length and width):
+
+
+Invoke the computeArea function with 3 and 4 as arguments and save the returned result to a variable named area:
+
+
+Add a method to the brain object called eat which will increase the energyLevel property by 2:
